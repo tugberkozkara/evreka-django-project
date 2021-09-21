@@ -1,0 +1,14 @@
+{% extends 'navigationrecord/base.html' %} 
+
+{% block content %} 
+
+    <nav class="nav nav-pills nav-fill" style="margin-top: 5%; margin-bottom: 5%; justify-content: space-evenly;">
+        <h3>Last 48 Hour Records</h3>
+        <a href="/"><button type="button" class="btn btn-secondary btn-lg">HomePage</button></a>
+    </nav>
+    
+
+    <span>last_points = {{ last_points }}</span>
+
+    
+{% endblock %} 

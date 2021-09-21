@@ -1,0 +1,22 @@
+{% extends 'binoperations/base.html' %}
+
+{% block content %} 
+ 
+    <nav class="nav nav-pills nav-fill" style="margin-top: 5%; margin-bottom: 5%; justify-content: space-evenly;">
+        <h3>Django Project Bin-Operation Pairs</h3>
+        <a href="/binoppair"><button type="button" class="btn btn-secondary btn-lg">List of Pairs</button></a>
+    </nav>
+    {% for operation in operations %} 
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Operation ID: {{ operation.id }}</h5>
+              <small class="text-muted">Bin ID: {{ operation.bin.id }}</small>
+            </div>
+            <p class="mb-1">Operation Name: {{ operation.name }}</p>
+            <small class="text-muted"></small>
+          </a>
+    </div>
+    {% endfor %} 
+{% endblock %} 
+

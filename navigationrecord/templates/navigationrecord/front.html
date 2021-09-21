@@ -1,0 +1,22 @@
+{% extends 'navigationrecord/base.html' %}
+
+{% block content %} 
+ 
+    <nav class="nav nav-pills nav-fill" style="margin-top: 5%; margin-bottom: 5%; justify-content: space-evenly;">
+        <h3>Django Project Navigation Records</h3>
+        <a href="{% url 'twodaysdata' %}"><button type="button" class="btn btn-secondary btn-lg">Last 48 Hours Records</button></a>
+    </nav>
+    {% for navRec in navRecs %} 
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Navigation Record ID: {{ navRec.id }}</h5>
+              <small class="text-muted">{{ navRec.datetime }}</small>
+            </div>
+            <p class="mb-1">{{ navRec.latitude }} , {{ navRec.longitude }}</p>
+            <small class="text-muted">{{ navRec.vehicle.plate }}</small>
+          </a>
+    </div>
+    {% endfor %} 
+{% endblock %} 
+

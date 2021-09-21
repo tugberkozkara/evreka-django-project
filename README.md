@@ -1,1 +1,1 @@
-# evreka-django-project
+# evrekaDjangoProject
