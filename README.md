@@ -76,7 +76,7 @@ last_points = [
 A simple database model design is expected. According to existing models tried to interact models each other and created a function that shows frequency values for Bin - Operation pairs.
 
 Models can be found in binoperations > models.py
-The variety of models can be increases by adding Vehicle, HumanResource models.
+The variety of models can be increased by adding Vehicle, HumanResource models etc.
 
 The function -with a tiny bug :) - shows the interactions between bins and operations can be found in binoperations > views.py
 
