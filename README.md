@@ -168,8 +168,6 @@ pairList = [
 ]
 ```
 
-For the entity relationship diagram;
 
-![evreka-erd](https://user-images.githubusercontent.com/77352442/134174137-17692acb-597f-4992-8937-9b8ab7eb9e4d.png)
 
 
